@@ -2,7 +2,13 @@
     --white-color: #fff;
     --black-color: #000;
     --text-color: #333;
+    --primary-color: #f53e2d;
+    
+    --header-height : 120px;
+    --header-nav : 33px;
+    --header-search : calc(var(--header-height) - var(--header-nav));
 }
+
 * {  
     box-sizing: inherit;
 }
@@ -12,8 +18,8 @@ html {
     font-family: 'Roboto', sans-serif;
 }
 .grid { 
+    max-width: 1200px;
     width: 100%;
-    min-width: 1200px;
     margin: 0 auto;
 }
 .grid__full-width { 
@@ -22,4 +28,40 @@ html {
 .grid__row {    
     display: flex;
     flex-wrap: wrap;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 12px;
+    min-width: 124px;
+    height: 34px;
+    line-height: 1.6rem;
+    font-size: 1.5rem;
+    border-radius: 2px;
+    color: var(--text-color);
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+/* Animation */
+@keyframes fadeIn { 
+    from {  
+        opacity: 0;
+    }
+    to {    
+        opacity: 1;
+    }
+}
+
+@keyframes growth { 
+    from {  
+        transform: scale(var(--growth-from)); /* Đặt 1 biến local */
+    }
+    to {    
+        transform: scale(var(--growth-to));
+    }
 }
