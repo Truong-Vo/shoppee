@@ -17,14 +17,17 @@
   <link rel="stylesheet" href="./font/fontawesome-free-5.15.4-web/fontawesome-free-5.15.4-web/css/all.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
   <link rel="stylesheet" href="./font/themify-icons-font/themify-icons/themify-icons.css" />
+  <link rel="stylesheet" href="./asssets/css/grid.css">
+  <link rel="stylesheet" href="./asssets/css/responsive.css">
+
 </head>
 
 <body>
   <div class="Main">
     <div class="app">
       <header class="header">
-        <div class="grid">
-          <div class="header__nav">
+        <div class="grid wide">
+          <div class="header__nav hide-on-mobile-tablet">
             <ul class="hd__nav__list">
               <li class="hd__nav__item nav--separate">
                 Vào cửa hàng trên ứng dụng TickID
@@ -184,8 +187,14 @@
               </li>
             </ul>
           </div>
+
+          <!-- Header-with-search -->
           <div class="header-with-search">
-            <div class="header-logo">
+            <label for="mobile-search-checkbox" class="header__mobile-search hide-on-tablet">
+              <i class="header__mobile-search-icon fas fa-search"></i>
+            </label>
+
+            <div class="header-logo hide-on-tablet ">
               <a href="/" class="header-logo-link">
                 <svg viewBox="0 0 192 65" class="header-logo-icon">
                   <g fill-rule="evenodd">
@@ -196,7 +205,9 @@
                 </svg>
               </a>
             </div>
-            <div class="header-search">
+            <input type="checkbox" hidden id="mobile-search-checkbox" class="header__search-checkbox">
+
+            <div class="header-search ">
               <div class="header-search-input-wrap">
                 <input type="text" class="header-search-input" placeholder="Hàng hiệu giảm đến 50%" />
                 <!-- Search history -->
@@ -286,86 +297,6 @@
                         </div>
                       </div>
                     </li>
-                    <li class="header-cart-item">
-                      <img src="./asssets/img/cach-phan-biet-bao-caoA-su-that-va-bao-cao-su-gia-1.jpg"
-                        class="header-cart-img" alt="Condom" />
-                      <div class="header-cart-info">
-                        <div class="header-cart-item-head">
-                          <h5 class="header-cart-item-name">
-                            Bao cao su Durex có gai
-                          </h5>
-                          <div class="header-cart-item-wrap">
-                            <span class="header-cart-item-priced">30.000đ</span>
-                            <span class="header-cart-item-multiply">x</span>
-                            <span class="header-cart-item-qnt">2</span>
-                          </div>
-                        </div>
-                        <div class="header-cart-item-body">
-                          <span class="header-cart-item-desc">Phân loại hàng: Bạc</span>
-                          <span class="header-cart-item-remove">Xoá</span>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="header-cart-item">
-                      <img src="./asssets/img/cach-phan-biet-bao-caoA-su-that-va-bao-cao-su-gia-1.jpg"
-                        class="header-cart-img" alt="Condom" />
-                      <div class="header-cart-info">
-                        <div class="header-cart-item-head">
-                          <h5 class="header-cart-item-name">
-                            Bao cao su Durex có gai
-                          </h5>
-                          <div class="header-cart-item-wrap">
-                            <span class="header-cart-item-priced">30.000đ</span>
-                            <span class="header-cart-item-multiply">x</span>
-                            <span class="header-cart-item-qnt">2</span>
-                          </div>
-                        </div>
-                        <div class="header-cart-item-body">
-                          <span class="header-cart-item-desc">Phân loại hàng: Bạc</span>
-                          <span class="header-cart-item-remove">Xoá</span>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="header-cart-item">
-                      <img src="./asssets/img/cach-phan-biet-bao-caoA-su-that-va-bao-cao-su-gia-1.jpg"
-                        class="header-cart-img" alt="Condom" />
-                      <div class="header-cart-info">
-                        <div class="header-cart-item-head">
-                          <h5 class="header-cart-item-name">
-                            Bao cao su Durex có gai
-                          </h5>
-                          <div class="header-cart-item-wrap">
-                            <span class="header-cart-item-priced">30.000đ</span>
-                            <span class="header-cart-item-multiply">x</span>
-                            <span class="header-cart-item-qnt">2</span>
-                          </div>
-                        </div>
-                        <div class="header-cart-item-body">
-                          <span class="header-cart-item-desc">Phân loại hàng: Bạc</span>
-                          <span class="header-cart-item-remove">Xoá</span>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="header-cart-item">
-                      <img src="./asssets/img/cach-phan-biet-bao-caoA-su-that-va-bao-cao-su-gia-1.jpg"
-                        class="header-cart-img" alt="Condom" />
-                      <div class="header-cart-info">
-                        <div class="header-cart-item-head">
-                          <h5 class="header-cart-item-name">
-                            Bao cao su Durex có gai
-                          </h5>
-                          <div class="header-cart-item-wrap">
-                            <span class="header-cart-item-priced">30.000đ</span>
-                            <span class="header-cart-item-multiply">x</span>
-                            <span class="header-cart-item-qnt">2</span>
-                          </div>
-                        </div>
-                        <div class="header-cart-item-body">
-                          <span class="header-cart-item-desc">Phân loại hàng: Bạc</span>
-                          <span class="header-cart-item-remove">Xoá</span>
-                        </div>
-                      </div>
-                    </li>
                   </ul>
                   <a class="header-cart-view-cart btn btn--primary">Xem giỏ hàng</a>
                 </div>
@@ -373,12 +304,19 @@
             </div>
           </div>
         </div>
+        <ul class="header__sort-bar">
+          <li class="header__sort-bar-item"><a href="" class="header__sort-link">Liên quan</a></li>
+          <li class="header__sort-bar-item header__sort-bar-item--active"><a href="" class="header__sort-link">Mới
+              nhất</a></li>
+          <li class="header__sort-bar-item"><a href="" class="header__sort-link">Bán chạy</a></li>
+          <li class="header__sort-bar-item"><a href="" class="header__sort-link">Giá</a></li>
+        </ul>
       </header>
 
       <body class="app__container">
-        <div class="grid">
-          <div class="grid__row app-contain">
-            <div class="grid__column-2">
+        <div class="grid wide">
+          <div class="row sm-gutter app-contain">
+            <div class="col l-2 m-0 c-0">
               <nav class="category">
                 <h3 class="category-heading">
                   DANH MỤC
@@ -399,8 +337,8 @@
                 </ul>
               </nav>
             </div>
-            <div class="grid__column-10">
-              <div class="home-filter">
+            <div class="col l-10 m-12 c-12 ">
+              <div class="home-filter hide-on-mobile-tablet">
                 <span class="home-filter__label">Sắp xếp theo</span>
                 <button class="home-filter-btn btn">Phổ biến</button>
                 <button class="home-filter-btn btn btn--primary">
@@ -437,10 +375,69 @@
                   </div>
                 </div>
               </div>
+
+
+              <nav class="mobile-categoy">
+                <ul class="mobile-category__list">
+
+                  <li class="mobile-category__item">
+                    <a href="" class="mobile-category__link">Dụng cụ & Thiết bị tiện
+                      ích </a>
+                  </li>
+                  <li class="mobile-category__item">
+                    <a href="" class="mobile-category__link">Dụng cụ & Thiết bị tiện
+                      ích</a>
+                  </li>
+                  <li class="mobile-category__item">
+                    <a href="" class="mobile-category__link">Dụng cụ & Thiết bị tiện
+                      ích</a>
+                  </li>
+                  <li class="mobile-category__item">
+                    <a href="" class="mobile-category__link">Dụng cụ & Thiết bị tiện
+                      ích</a>
+                  </li>
+                  <li class="mobile-category__item">
+                    <a href="" class="mobile-category__link">Dụng cụ & Thiết bị tiện
+                      ích</a>
+                  </li>
+                  <li class="mobile-category__item">
+                    <a href="" class="mobile-category__link">Dụng cụ & Thiết bị tiện
+                      ích</a>
+                  </li>
+                  <li class="mobile-category__item">
+                    <a href="" class="mobile-category__link">Dụng cụ & Thiết bị tiện
+                      ích</a>
+                  </li>
+                  <li class="mobile-category__item">
+                    <a href="" class="mobile-category__link">Dụng cụ & Thiết bị tiện
+                      ích</a>
+                  </li>
+                  <li class="mobile-category__item">
+                    <a href="" class="mobile-category__link">Dụng cụ & Thiết bị tiện
+                      ích</a>
+                  </li>
+                  <li class="mobile-category__item">
+                    <a href="" class="mobile-category__link">Dụng cụ & Thiết bị tiện
+                      ích</a>
+                  </li>
+                  <li class="mobile-category__item">
+                    <a href="" class="mobile-category__link">Dụng cụ & Thiết bị tiện
+                      ích</a>
+                  </li>
+                  <li class="mobile-category__item">
+                    <a href="" class="mobile-category__link">Dụng cụ & Thiết bị tiện
+                      ích</a>
+                  </li>
+                  <li class="mobile-category__item">
+                    <a href="" class="mobile-category__link">Dụng cụ & Thiết bị tiện
+                      ích</a>
+                  </li>
+                </ul>
+              </nav>
               <!-- Product item -->
               <div class="home-product">
-                <div class="grid__row">
-                  <div class="grid__column-2-4">
+                <div class="row sm-gutter">
+                  <div class="col l-2-4 m-4 c-6">
                     <a class="home-product-item" href="#">
                       <div class="home-product-item__img" style="
                             background-image: url(https://cf.shopee.vn/file/2c489b571244cacaf91522ee068a8e4c_tn);
@@ -481,7 +478,7 @@
                       </div>
                     </a>
                   </div>
-                  <div class="grid__column-2-4">
+                  <div class="col l-2-4 m-4 c-6">
                     <a class="home-product-item" href="#">
                       <div class="home-product-item__img" style="
                             background-image: url(https://cf.shopee.vn/file/2c489b571244cacaf91522ee068a8e4c_tn);
@@ -522,7 +519,7 @@
                       </div>
                     </a>
                   </div>
-                  <div class="grid__column-2-4">
+                  <div class="col l-2-4 m-4 c-6">
                     <a class="home-product-item" href="#">
                       <div class="home-product-item__img" style="
                             background-image: url(https://cf.shopee.vn/file/2c489b571244cacaf91522ee068a8e4c_tn);
@@ -563,7 +560,7 @@
                       </div>
                     </a>
                   </div>
-                  <div class="grid__column-2-4">
+                  <div class="col l-2-4 m-4 c-6">
                     <a class="home-product-item" href="#">
                       <div class="home-product-item__img" style="
                             background-image: url(https://cf.shopee.vn/file/2c489b571244cacaf91522ee068a8e4c_tn);
@@ -604,7 +601,7 @@
                       </div>
                     </a>
                   </div>
-                  <div class="grid__column-2-4">
+                  <div class="col l-2-4 m-4 c-6">
                     <a class="home-product-item" href="#">
                       <div class="home-product-item__img" style="
                             background-image: url(https://cf.shopee.vn/file/2c489b571244cacaf91522ee068a8e4c_tn);
@@ -645,7 +642,7 @@
                       </div>
                     </a>
                   </div>
-                  <div class="grid__column-2-4">
+                  <div class="col l-2-4 m-4 c-6">
                     <a class="home-product-item" href="#">
                       <div class="home-product-item__img" style="
                             background-image: url(https://cf.shopee.vn/file/2c489b571244cacaf91522ee068a8e4c_tn);
@@ -686,7 +683,7 @@
                       </div>
                     </a>
                   </div>
-                  <div class="grid__column-2-4">
+                  <div class="col l-2-4 m-4 c-6">
                     <a class="home-product-item" href="#">
                       <div class="home-product-item__img" style="
                             background-image: url(https://cf.shopee.vn/file/2c489b571244cacaf91522ee068a8e4c_tn);
@@ -727,7 +724,7 @@
                       </div>
                     </a>
                   </div>
-                  <div class="grid__column-2-4">
+                  <div class="col l-2-4 m-4 c-6">
                     <a class="home-product-item" href="#">
                       <div class="home-product-item__img" style="
                             background-image: url(https://cf.shopee.vn/file/2c489b571244cacaf91522ee068a8e4c_tn);
@@ -768,7 +765,7 @@
                       </div>
                     </a>
                   </div>
-                  <div class="grid__column-2-4">
+                  <div class="col l-2-4 m-4 c-6">
                     <a class="home-product-item" href="#">
                       <div class="home-product-item__img" style="
                             background-image: url(https://cf.shopee.vn/file/2c489b571244cacaf91522ee068a8e4c_tn);
@@ -809,7 +806,7 @@
                       </div>
                     </a>
                   </div>
-                  <div class="grid__column-2-4">
+                  <div class="col l-2-4 m-4 c-6">
                     <a class="home-product-item" href="#">
                       <div class="home-product-item__img" style="
                             background-image: url(https://cf.shopee.vn/file/2c489b571244cacaf91522ee068a8e4c_tn);
@@ -905,9 +902,9 @@
 </body>
 
 <footer class="footer">
-  <div class="grid footer__content">
-    <div class="grid__row">
-      <div class="grid__column-2-4">
+  <div class="grid wide footer__content">
+    <div class="row">
+      <div class="col l-2-4 m-4 c-6">
         <h3 class="footer__heading">Chăm sóc khách hàng</h3>
         <ul class="footer-list">
           <li class="footer-item">
@@ -921,7 +918,7 @@
           </li>
         </ul>
       </div>
-      <div class="grid__column-2-4">
+      <div class="col l-2-4 m-4 c-6">
         <h3 class="footer__heading">Giới thiệu</h3>
         <ul class="footer-list">
           <li class="footer-item">
@@ -935,7 +932,7 @@
           </li>
         </ul>
       </div>
-      <div class="grid__column-2-4">
+      <div class="col l-2-4 m-4 c-6">
         <h3 class="footer__heading">Danh mục</h3>
         <ul class="footer-list">
           <li class="footer-item">
@@ -949,7 +946,7 @@
           </li>
         </ul>
       </div>
-      <div class="grid__column-2-4">
+      <div class="col l-2-4 m-4 c-6">
         <h3 class="footer__heading">Theo dõi</h3>
         <ul class="footer-list">
           <li class="footer-item">
@@ -972,7 +969,7 @@
           </li>
         </ul>
       </div>
-      <div class="grid__column-2-4">
+      <div class="col l-2-4 m-4 c-6">
         <h3 class="footer__heading">Vào cửa hàng trên ứng dụng</h3>
         <div class="footer__download">
           <img src="/asssets/img/qr-code.png" alt="Download QR" class="footer__download-qr">
@@ -990,14 +987,13 @@
   </div>
 
   <div class="footer__bottom">
-    <div class="grid">
-      <div class="grid__row">
-        <p class="footer__text">© 2019 - Bản quyền thuộc về Công ty MyCV</p>
-      </div>
+    <div class="grid wide">
+      <p class="footer__text">© 2019 - Bản quyền thuộc về Công ty MyCV</p>
     </div>
   </div>
 </footer>
 </div>
+
 
 <!-- MODAL -->
 
